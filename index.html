@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgetPass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ForgetPass</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search passwords...">
+                <button class="btn" id="search-btn">Search</button>
+            </div>
+            <button class="btn" id="add-new-btn">Add New Password</button>
+        </div>
+        
+        <div class="password-list">
+            <div class="password-item header">
+                <span>Account Name</span>
+                <span>Username</span>
+                <span>Password</span>
+                <span>Actions</span>
+            </div>
+            <!-- Password entries will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Add Password Modal -->
+    <div id="add-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="add-modal-title">Add New Password</h2>
+            <form id="add-password-form">
+                <input type="text" id="account-name" placeholder="Account Name" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn">Save Password</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
